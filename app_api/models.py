@@ -28,7 +28,7 @@ class UserProfileManager(BaseUserManager):
 
 
 
-class Userprofile(AbstractBaseUser, PermissionsMixin):
+class UserProfile(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(max_length=255, unique=True)
     name = models.CharField(max_length=255)
     is_active = models.BooleanField(default=True)
